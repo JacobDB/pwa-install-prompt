@@ -14,7 +14,7 @@
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() :
     typeof define === "function" && define.amd ? define(factory) :
     (global.pwaInstallPrompt = factory());
-}(this, (() => {
+}(this, (function () {
     const DEFAULTS = {
         container:    ".pwa-install-prompt__container",
         buttons:      ".pwa-install-prompt__container button",
@@ -24,7 +24,7 @@
         condition:    null,
     };
 
-    const NEEDS_TO_SEE_PROMPT = (options) => {
+    const NEEDS_TO_SEE_PROMPT = function (options) {
         // allow user to set a custom condition that overrides below
         if (options.condition !== null) {
             return options.condition;
@@ -50,7 +50,7 @@
         return (isNaN(DAYS) || DAYS > options.show_after) && IOS;
     };
 
-    const INSTALL_PROMPT = ((container = DEFAULTS.container, options = {}) => {
+    const INSTALL_PROMPT = (function (container = DEFAULTS.container, options = {}) {
         options.container    = container;
         options.buttons      = options.buttons      || DEFAULTS.buttons;
         options.active_class = options.active_class || DEFAULTS.active_class;
