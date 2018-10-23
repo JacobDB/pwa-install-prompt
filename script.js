@@ -13,7 +13,7 @@
 (function (global, factory) {
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() :
     typeof define === "function" && define.amd ? define(factory) :
-    (global.iosInstallPrompt = factory());
+    (global.pwaInstallPrompt = factory());
 }(this, (function () {
     const DEFAULTS = {
         container:    ".pwa-install-prompt__container",

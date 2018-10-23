@@ -27,8 +27,8 @@ yarn add pwa-install-prompt
 ## Usage
 
 ```js
-import iosInstallPrompt from "pwa-install-prompt";
-new iosInstallPrompt(".pwa-install-prompt__container", {
+import pwaInstallPrompt from "pwa-install-prompt";
+new pwaInstallPrompt(".pwa-install-prompt__container", {
     buttons: ".pwa-install-prompt__container button",
     active_class: "is-active",
     show_after: 14,
