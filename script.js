@@ -1,5 +1,5 @@
 /**
- * PWA Install Prompt 0.1.3
+ * PWA Install Prompt 0.1.4
  * Prompt users to add your PWA to their home screen, since Apple won’t.
  * https://github.com/JacobDB/pwa-install-prompt/
  *

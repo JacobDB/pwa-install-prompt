@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.4
+
+- Fix a few variable names; e8f9d6e81b602c4ffd62a026d67033e08e192b2b
+
 ## v0.1.3
 
 - Add FontAwesome icon credit; 226c25768ca2435dfc724f48009d58a8a98cd6f0
