@@ -1,7 +1,7 @@
 /**
- * iOS Install Prompt 0.1.0
- * Prompt iOS users to add your PWA to their home screen, since Apple won’t.
- * https://github.com/JacobDB/ios-install-prompt/
+ * PWA Install Prompt 0.1.2
+ * Prompt users to add your PWA to their home screen, since Apple won’t.
+ * https://github.com/JacobDB/pwa-install-prompt/
  *
  * Copyright 2018 Jacob Bearce
  *
@@ -16,8 +16,8 @@
     (global.iosInstallPrompt = factory());
 }(this, (function () {
     const DEFAULTS = {
-        container:    ".ios-install-prompt__container",
-        buttons:      ".ios-install-prompt__container button",
+        container:    ".pwa-install-prompt__container",
+        buttons:      ".pwa-install-prompt__container button",
         active_class: "is-active",
         show_after:   14,
         expires:      28,

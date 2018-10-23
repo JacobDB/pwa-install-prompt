@@ -1,7 +1,7 @@
 /**
- * iOS Install Prompt 0.1.0
- * Prompt iOS users to add your PWA to their home screen, since Apple won’t.
- * https://github.com/JacobDB/ios-install-prompt/
+ * PWA Install Prompt 0.1.2
+ * Prompt users to add your PWA to their home screen, since Apple won’t.
+ * https://github.com/JacobDB/pwa-install-prompt/
  *
  * Copyright 2018 Jacob Bearce
  *
@@ -10,7 +10,7 @@
  * Released on: October 23, 2018
  */
 
-.ios-install-prompt__container {
+.pwa-install-prompt__container {
     align-items: center;
     box-sizing: border-box;
     display: none;
@@ -24,11 +24,11 @@
     z-index: 100000;
 }
 
-.ios-install-prompt__container.is-active {
+.pwa-install-prompt__container.is-active {
     display: flex;
 }
 
-.ios-install-prompt__overlay {
+.pwa-install-prompt__overlay {
     background: rgba(0,0,0,0.5);
     border: 0;
     height: 100%;
@@ -40,7 +40,7 @@
     z-index: 0;
 }
 
-.ios-install-prompt {
+.pwa-install-prompt {
     background: #FFF;
     border-radius: 2px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.125);
@@ -53,28 +53,28 @@
     z-index: 1;
 }
 
-.ios-install-prompt__icon {
+.pwa-install-prompt__icon {
     border-radius: 12px;
     margin: 40px 0 0;
     width: 60px;
 }
 
-.ios-install-prompt__content {
+.pwa-install-prompt__content {
     padding: 10px 35px;
 }
 
-.ios-install-prompt__title {
+.pwa-install-prompt__title {
     font-size: 24px;
     margin: 0 0 20px;
 }
 
-.ios-install-prompt__text {
+.pwa-install-prompt__text {
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 46px;
 }
 
-.ios-install-prompt__guide {
+.pwa-install-prompt__guide {
     align-items: center;
     display: flex;
     font-size: 12px;
@@ -82,12 +82,12 @@
     margin: 0;
 }
 
-.ios-install-prompt__guide__icon {
+.pwa-install-prompt__guide__icon {
     margin: 0 2px 6px;
     width: 20px;
 }
 
-.ios-install-prompt__close {
+.pwa-install-prompt__close {
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFFFFF' d='M64.197,50.47C79.696,34.95 95.259,19.502 110.597,3.824C114.411,0.182 114.565,1.022 117.707,1.24C124.299,2.167 127.723,10.687 123.435,16.078C108.453,32.47 92.997,48.399 77.387,64.174C92.571,80.01 107.685,95.917 123.024,111.595C129.195,118.349 120.432,132.527 111.035,124.716C94.992,109.403 79.408,93.611 63.979,77.65C48.485,93.169 32.917,108.618 17.584,124.296C10.837,130.734 -2.411,121.031 4.747,112.042C19.728,95.65 35.179,79.716 50.795,63.945C35.605,48.11 20.491,32.198 5.157,16.525C0.085,10.976 2.912,0.586 12.267,1.24C14.069,1.491 15.723,2.227 17.141,3.404C33.184,18.717 48.768,34.509 64.197,50.47Z' /%3E%3C/svg%3E%0A") center center no-repeat;
     border: 0;
     bottom: 100%;
