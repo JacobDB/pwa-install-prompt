@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.8
+
+- Change from arrow functions to standard to fix 'not a constructor' error; 0a0e0ac1730e22c8dbabd21e09e214a7b974bef1
+
 ## v0.1.7
 
 - Use for (...) instead of forEach; e497b0d9a143683cc74584b8ebb37a9f5feb01f1
