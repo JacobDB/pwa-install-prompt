@@ -68,11 +68,11 @@
         }
 
         if (BUTTONS.length) {
-            BUTTONS.forEach((button) => {
-                button.addEventListener("click", () => {
+            for (let i = 0; i < BUTTONS.length; i++) {
+                BUTTONS[i].addEventListener("click", () => {
                     CONTAINER.classList.remove(options.active_class);
                 })
-            });
+            }
         }
     });
 
