@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.6
+
+- Change main function back from an arrow function; c34a03b6ed0ebb628e612ab817f24b91a1298423
+
 ## v0.1.5
 
 - Change over to all arrow functions; 37017c7dd62a2c596a472a00920a3861c32f587c

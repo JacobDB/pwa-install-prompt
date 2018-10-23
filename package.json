@@ -1,6 +1,6 @@
 {
   "name": "pwa-install-prompt",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "script.js",
   "style": "style.css",
   "description": "Prompt users to add your PWA to their home screen, since Apple won’t.",
