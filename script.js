@@ -58,14 +58,14 @@
             if (CONTAINER) {
                 CONTAINER.classList.add(options.active_class);
             }
+        }
 
-            if (BUTTONS.length) {
-                BUTTONS.forEach((button) => {
-                    button.addEventListener("click", () => {
-                        CONTAINER.classList.remove(options.active_class);
-                    })
-                });
-            }
+        if (BUTTONS.length) {
+            BUTTONS.forEach((button) => {
+                button.addEventListener("click", () => {
+                    CONTAINER.classList.remove(options.active_class);
+                })
+            });
         }
     });
 
