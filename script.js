@@ -10,11 +10,11 @@
  * Released on: October 23, 2018
  */
 
-(function (global, factory) {
+((global, factory) => {
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() :
     typeof define === "function" && define.amd ? define(factory) :
     (global.pwaInstallPrompt = factory());
-}(this, (function () {
+}(this, (() => {
     const DEFAULTS = {
         container:    ".pwa-install-prompt__container",
         buttons:      ".pwa-install-prompt__container button",
@@ -50,7 +50,7 @@
         return (isNaN(DAYS) || DAYS > options.show_after) && IOS;
     };
 
-    const INSTALL_PROMPT = (function (container = DEFAULTS.container, options = {}) {
+    const INSTALL_PROMPT = ((container = DEFAULTS.container, options = {}) => {
         options.container    = container;
         options.buttons      = options.buttons      || DEFAULTS.buttons;
         options.active_class = options.active_class || DEFAULTS.active_class;
