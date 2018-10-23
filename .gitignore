@@ -1,0 +1,18 @@
+# https://git-scm.com/docs/gitignore
+
+# Package Managers
+bower_components/
+node_modules/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows folder config file
+Desktop.ini
+
+# Windows Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
