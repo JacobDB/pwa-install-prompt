@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.7
+
+- Use for (...) instead of forEach; e497b0d9a143683cc74584b8ebb37a9f5feb01f1
+
 ## v0.1.6
 
 - Change main function back from an arrow function; c34a03b6ed0ebb628e612ab817f24b91a1298423
