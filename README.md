@@ -2,6 +2,12 @@
 
 Prompt iOS users to add your PWA to their home screen, since Apple won’t.
 
+*[Inspired by Scott Batson @ DockYard](https://dockyard.com/blog/2017/09/27/encouraging-pwa-installation-on-ios)*
+
+## Demo
+
+https://jacobdb.github.io/ios-install-prompt/demo/
+
 ## Installation
 
 ### via npm
