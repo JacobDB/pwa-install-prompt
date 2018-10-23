@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.2
+
+- Make it more clear how options are to be used; c1065456ac7a11a77b6c6b44c4617b75946345a5
+- Use default values for example options; b8f0f88423421ad4f30cba7fd7122b1c41309b4a
+- Fix the build number; 4e558d94ab58454b496c0a2c98cce8693a7ad137
+
 ## v0.1.1
 
 - Add inspiration and demo links; 602aef245e623babde93c8c8c0ba6bd41163c582
