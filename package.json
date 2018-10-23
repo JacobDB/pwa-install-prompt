@@ -1,6 +1,6 @@
 {
   "name": "ios-install-prompt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "script.js",
   "description": "Prompt iOS users to add your PWA to their home screen, since Apple won’t.",
   "homepage": "https://github.com/JacobDB/ios-install-prompt",
