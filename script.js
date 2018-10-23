@@ -44,7 +44,7 @@
 
         // get the number of days since the user last visited and check if they're using iOS
         const DAYS = THEN && THEN.length >= 2 ? Math.ceil((parseInt(THEN[1]) - NOW) / (1000 * 60 * 60 * 24)) : NaN;
-        const IOS  = ["iPad", "iPhone", "iPod"].includes(navigator.platform);
+        const IOS  = ["iPad", "iPhone", "iPod"].indexOf(navigator.platform) > 0;
 
         // show if the cookie isn't set, or last visit is > show_after, and it's iOS
         return (isNaN(DAYS) || DAYS > options.show_after) && IOS;
