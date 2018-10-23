@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.5
+
+- Change over to all arrow functions; 37017c7dd62a2c596a472a00920a3861c32f587c
+- Use Array.indexOf instead of Array.includes; 26e3a28992afd4889a6b03156e3ba0221b4291e6
+
 ## v0.1.4
 
 - Fix a few variable names; e8f9d6e81b602c4ffd62a026d67033e08e192b2b
