@@ -27,9 +27,9 @@ yarn add ios-install-prompt
 ```js
 import iosInstallPrompt from "ios-install-prompt";
 new iosInstallPrompt(".ios-install-prompt__container", {
-    buttons: ...,
-    active_class: ...,
-    show_after: ...,
+    buttons: ".ios-install-prompt__container button",
+    active_class: "is-active",
+    show_after: 14,
 });
 ```
 
