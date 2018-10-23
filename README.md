@@ -30,6 +30,7 @@ new iosInstallPrompt(".ios-install-prompt__container", {
     buttons: ".ios-install-prompt__container button",
     active_class: "is-active",
     show_after: 14,
+    condition: null,
 });
 ```
 
@@ -52,8 +53,9 @@ new iosInstallPrompt(".ios-install-prompt__container", {
 
 ## Options
 
-| Name           | Default                                 | Description                                            |
-|----------------|-----------------------------------------|--------------------------------------------------------|
-| `buttons`      | `.ios-install-prompt__container button` | Query selector to target to handle closing the prompt  |
-| `active_class` | `is-active`                             | Class name to be added when the prompt is visible      |
-| `show_after`   | `14`                                    | Number of days to wait before showing the prompt again |
+| Name           | Default                                 | Description                                                 |
+|----------------|-----------------------------------------|-------------------------------------------------------------|
+| `buttons`      | `.ios-install-prompt__container button` | Query selector to target to handle closing the prompt       |
+| `active_class` | `is-active`                             | Class name to be added when the prompt is visible           |
+| `show_after`   | `14`                                    | Number of days to wait before showing the prompt again      |
+| `condition`    | `null`                                  | Set a custom condition to determine when to show the prompt |
