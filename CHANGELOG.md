@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.9
+
+- Fix iOS share icon blue to match Apple's HID spec; 7c15c1c4c4a6ae9ae8a061df8d3d3f8797f12079
+- Add screenshot to README; d8e71cd929f2e9745f732008f137c64f741742bc
+
 ## v0.1.8
 
 - Change from arrow functions to standard to fix 'not a constructor' error; 0a0e0ac1730e22c8dbabd21e09e214a7b974bef1
