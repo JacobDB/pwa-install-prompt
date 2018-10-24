@@ -64,3 +64,8 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
 | `show_after`   | `14`                                    | Number of days to wait before showing the prompt again      |
 | `expires`      | `28`                                    | Number of days before the `last_visit` cookie expires       |
 | `condition`    | `null`                                  | Set a custom condition to determine when to show the prompt |
+
+## Contributors
+
+- [Jacob Bearce](https://github.com/JacobDB) &ndash; [Commits](https://github.com/JacobDB/pwa-install-prompt/commits?author=JacobDB)
+- [Sergio Arbeo](https://github.com/Serabe) &ndash; [Commits](https://github.com/JacobDB/pwa-install-prompt/commits?author=Serabe)
