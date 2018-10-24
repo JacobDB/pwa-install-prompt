@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.13
+
+- Change to a single closing element; 5bd29529347e39e291dfac4a24a9db11854ad1e4
+
 ## v0.1.12
 
 - Make the demo behave more like it would in production; a867fe68da14d8ee7a6889743ae00626f4444e76
