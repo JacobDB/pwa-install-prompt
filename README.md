@@ -31,7 +31,7 @@ yarn add pwa-install-prompt
 ```js
 import pwaInstallPrompt from "pwa-install-prompt";
 new pwaInstallPrompt(".pwa-install-prompt__container", {
-    buttons: ".pwa-install-prompt__container button",
+    closer: ".pwa-install-prompt__overlay",
     active_class: "is-active",
     show_after: 14,
     condition: null,
@@ -59,7 +59,7 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
 
 | Name           | Default                                 | Description                                                 |
 |----------------|-----------------------------------------|-------------------------------------------------------------|
-| `buttons`      | `.pwa-install-prompt__container button` | Query selector to target to handle closing the prompt       |
+| `closer`      | `.pwa-install-prompt__overlay`           | Query selector to target to handle closing the prompt       |
 | `active_class` | `is-active`                             | Class name to be added when the prompt is visible           |
 | `show_after`   | `14`                                    | Number of days to wait before showing the prompt again      |
 | `expires`      | `28`                                    | Number of days before the `last_visit` cookie expires       |

@@ -17,7 +17,7 @@
 }(this, (function () {
     const DEFAULTS = {
         container:    ".pwa-install-prompt__container",
-        buttons:      ".pwa-install-prompt__container button",
+        closer:       ".pwa-install-prompt__overlay",
         active_class: "is-active",
         show_after:   14,
         expires:      28,
@@ -52,14 +52,14 @@
 
     const INSTALL_PROMPT = (function (container = DEFAULTS.container, options = {}) {
         options.container    = container;
-        options.buttons      = options.buttons      || DEFAULTS.buttons;
+        options.closer       = options.closer       || DEFAULTS.closer;
         options.active_class = options.active_class || DEFAULTS.active_class;
         options.show_after   = options.show_after   || DEFAULTS.show_after;
         options.expires      = options.expires      || DEFAULTS.expires;
         options.condition    = options.condition    || DEFAULTS.condition;
 
         const CONTAINER = document.querySelector(options.container);
-        const BUTTONS   = document.querySelectorAll(options.buttons);
+        const CLOSER    = document.querySelector(options.closer);
 
         if (NEEDS_TO_SEE_PROMPT(options)) {
             if (CONTAINER) {
@@ -67,12 +67,10 @@
             }
         }
 
-        if (BUTTONS.length) {
-            for (let i = 0; i < BUTTONS.length; i++) {
-                BUTTONS[i].addEventListener("click", () => {
-                    CONTAINER.classList.remove(options.active_class);
-                })
-            }
+        if (CONTAINER && CLOSER) {
+            CLOSER.addEventListener("click", function () {
+                CONTAINER.classList.remove(options.active_class);
+            });
         }
     });
 
