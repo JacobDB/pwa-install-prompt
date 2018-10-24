@@ -1,5 +1,7 @@
 # PWA Install Prompt
 
+![screenshot](screenshot.png)
+
 Prompt users to add your PWA to their home screen, since Apple won’t.
 
 By default, this module checks if the user is on an iOS device, if they've visited the site before, and if the last time they visited the site was more than 14 days ago. If all conditions are met, then the prompt is shown. The conditions that get checked can be overridden in order to use this prompt for custom scenarios.
