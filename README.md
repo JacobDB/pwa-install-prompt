@@ -30,6 +30,7 @@ yarn add pwa-install-prompt
 
 ```js
 import pwaInstallPrompt from "pwa-install-prompt";
+
 new pwaInstallPrompt(".pwa-install-prompt__container", {
     closer: ".pwa-install-prompt__overlay",
     active_class: "is-active",
