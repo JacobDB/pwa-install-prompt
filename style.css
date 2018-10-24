@@ -13,19 +13,24 @@
 .pwa-install-prompt__container {
     align-items: center;
     box-sizing: border-box;
-    display: none;
+    display: flex;
     height: 100%;
     justify-content: center;
-    left: 0;
+    left: -999em;
     padding: 30px;
     position: fixed;
-    top: 0;
+    top: -999em;
+    transition: left 0s 0.15s, top 0s 0.15s, visibility 0s 0.15s;
+    visibility: hidden;
     width: 100%;
     z-index: 100000;
 }
 
 .pwa-install-prompt__container.is-active {
-    display: flex;
+    left: 0;
+    top: 0;
+    transition: none;
+    visibility: visible;
 }
 
 .pwa-install-prompt__overlay {
@@ -33,11 +38,17 @@
     border: 0;
     height: 100%;
     left: 0;
+    opacity: 0;
     position: absolute;
     text-indent: -999em;
     top: 0;
+    transition: opacity 0.15s;
     width: 100%;
     z-index: 0;
+}
+
+.pwa-install-prompt__container.is-active .pwa-install-prompt__overlay {
+    opacity: 1;
 }
 
 .pwa-install-prompt {
@@ -48,9 +59,17 @@
     color: #424242;
     font-family: sans-serif;
     max-width: 320px;
+    opacity: 0;
     position: relative;
     text-align: center;
+    transform: translateY(25%);
+    transition: opacity 0.15s, transform 0.15s ease-in-out;
     z-index: 1;
+}
+
+.pwa-install-prompt__container.is-active .pwa-install-prompt {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 .pwa-install-prompt__icon {
