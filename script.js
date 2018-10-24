@@ -16,12 +16,12 @@
     (global.pwaInstallPrompt = factory());
 }(this, (function () {
     const DEFAULTS = {
-        container:    ".pwa-install-prompt__container",
-        closer:       ".pwa-install-prompt__overlay",
         active_class: "is-active",
-        show_after:   14,
-        expires:      28,
+        closer:       ".pwa-install-prompt__overlay",
         condition:    null,
+        container:    ".pwa-install-prompt__container",
+        expires:      28,
+        show_after:   14,
     };
 
     const NEEDS_TO_SEE_PROMPT = function (options) {
@@ -51,12 +51,12 @@
     };
 
     const INSTALL_PROMPT = (function (container = DEFAULTS.container, options = {}) {
-        options.container    = container;
-        options.closer       = options.closer       || DEFAULTS.closer;
         options.active_class = options.active_class || DEFAULTS.active_class;
-        options.show_after   = options.show_after   || DEFAULTS.show_after;
-        options.expires      = options.expires      || DEFAULTS.expires;
+        options.closer       = options.closer       || DEFAULTS.closer;
         options.condition    = options.condition    || DEFAULTS.condition;
+        options.container    = container;
+        options.expires      = options.expires      || DEFAULTS.expires;
+        options.show_after   = options.show_after   || DEFAULTS.show_after;
 
         const CONTAINER = document.querySelector(options.container);
         const CLOSER    = document.querySelector(options.closer);
