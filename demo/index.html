@@ -30,9 +30,11 @@
         </div>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
-            new pwaInstallPrompt(".pwa-install-prompt__container", {
-                condition: true, // always return true for the demo
-            });
+            setTimeout(function () { // delay initialization for the demo
+                new pwaInstallPrompt(".pwa-install-prompt__container", {
+                    condition: true, // always return true for the demo
+                });
+            }, 1000);
         </script>
     </body>
 </html>
