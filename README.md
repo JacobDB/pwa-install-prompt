@@ -4,7 +4,7 @@
 
 Prompt users to add your PWA to their home screen, since Apple won’t.
 
-By default, this module checks if the user is on an iOS device, if they've visited the site before, and if the last time they visited the site was more than 14 days ago. If all conditions are met, then the prompt is shown. The conditions that get checked can be overridden in order to use this prompt for custom scenarios.
+By default, this module checks if the user has not visited the site before, or if the last time they visited the site was more than 14 days ago, and if they are using iOS. If all conditions are met, then the prompt is shown. The conditions that get checked can be overridden in order to use this prompt for custom scenarios.
 
 *[Inspired by Scott Batson @ DockYard](https://dockyard.com/blog/2017/09/27/encouraging-ios-installation-on-ios)*
 
