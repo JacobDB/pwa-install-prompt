@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.12
+
+- Make the demo behave more like it would in production; a867fe68da14d8ee7a6889743ae00626f4444e76
+- Delay initialization for the demo; a96bfabdd7c816e56587a5932d0dbeecf7f3a558
+- Add a note clarifying how the demo works; 3172f0ee1cf980fb5e26d358cbc245916c6c467c
+- Fix link to DockYard post; PR #5; 2e7d720c632a2e9c9cc30cab1785476e8f43be7f
+- Add contributors list; 091b8d7957717e044c53e3ea5d0ddc314a705de3
+
 ## v0.1.11
 
 - Add transition effects; b85a09dabfe2f34c76f5c2369b367afc75ffdeb7
