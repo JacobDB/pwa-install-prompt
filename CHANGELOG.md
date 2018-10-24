@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.11
+
+- Add transition effects; b85a09dabfe2f34c76f5c2369b367afc75ffdeb7
+
 ## v0.1.10
 
 - Make the description a bit more clear; c1abc1f08dd7c9f0563e9f7fd807cadc527e91cf
