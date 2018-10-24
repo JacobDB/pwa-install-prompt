@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.10
+
+- Make the description a bit more clear; c1abc1f08dd7c9f0563e9f7fd807cadc527e91cf
+- Document `expires` option; 1259e6556b1d9768b9b12d5368f33822478c5d19
+
 ## v0.1.9
 
 - Fix iOS share icon blue to match Apple's HID spec; 7c15c1c4c4a6ae9ae8a061df8d3d3f8797f12079
