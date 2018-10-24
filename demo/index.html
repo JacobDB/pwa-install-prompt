@@ -15,9 +15,8 @@
         <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
-        <p class="demo">For production, remove the <code>is-active</code> class.</p>
         <p class="demo">Demo icon pulled from <a href="https://fontawesome.com/icons/rocket?style=solid" target="_blank">FontAwesome 5</a>.</p>
-        <div class="pwa-install-prompt__container is-active">
+        <div class="pwa-install-prompt__container">
             <button class="pwa-install-prompt__overlay">Close</button>
             <div class="pwa-install-prompt">
                 <img class="pwa-install-prompt__icon" src="icon.png" alt="Rocket" />
@@ -31,7 +30,9 @@
         </div>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
-            new pwaInstallPrompt();
+            new pwaInstallPrompt(".pwa-install-prompt__container", {
+                condition: true, // always return true for the demo
+            });
         </script>
     </body>
 </html>
