@@ -19,7 +19,7 @@
     <body>
         <div class="demo">
             <p>The prompt will appear if you haven’t visited this page before, or if it’s been 14 days since you last visited, and you’re on an iOS device. Click the button below to force the prompt to appear.</p>
-            <button onclick="document.querySelector('.pwa-install-prompt__container').classList.add('is-active');">Show Prompt</button>
+            <button onclick="prompt.open();">Show Prompt</button>
             <p>Demo icon pulled from <a href="https://fontawesome.com/icons/rocket?style=solid" target="_blank">FontAwesome 5</a>.</p>
             <p><a href="https://github.com/JacobDB/pwa-install-prompt">GitHub</a> &mdash; <a href="https://www.npmjs.com/package/pwa-install-prompt">NPM</a></p>
         </div>
@@ -36,7 +36,7 @@
         </div>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
-            new pwaInstallPrompt();
+            var prompt = new pwaInstallPrompt();
         </script>
     </body>
 </html>

@@ -58,21 +58,44 @@
         options.expires      = options.expires      || DEFAULTS.expires;
         options.show_after   = options.show_after   || DEFAULTS.show_after;
 
-        const CONTAINER = document.querySelector(options.container);
-        const CLOSER    = document.querySelector(options.closer);
+        // store the arguments for later
+        this.container = container;
+        this.options   = options;
 
-        if (NEEDS_TO_SEE_PROMPT(options)) {
-            if (CONTAINER) {
-                CONTAINER.classList.add(options.active_class);
-            }
+        const PROMPT = this;
+
+        // open if the conditional returns true
+        if (NEEDS_TO_SEE_PROMPT(PROMPT.options)) {
+            PROMPT.open();
         }
 
-        if (CONTAINER && CLOSER) {
+        const CLOSER = document.querySelector(PROMPT.options.closer);
+
+        // close if the closer is clicked
+        if (CLOSER) {
             CLOSER.addEventListener("click", function () {
-                CONTAINER.classList.remove(options.active_class);
+                PROMPT.close();
             });
         }
     });
+
+    INSTALL_PROMPT.prototype.open = function () {
+        const PROMPT    = this;
+        const CONTAINER = document.querySelector(PROMPT.options.container);
+
+        if (CONTAINER) {
+            CONTAINER.classList.add(PROMPT.options.active_class);
+        }
+    };
+
+    INSTALL_PROMPT.prototype.close = function () {
+        const PROMPT    = this;
+        const CONTAINER = document.querySelector(PROMPT.options.container);
+
+        if (CONTAINER) {
+            CONTAINER.classList.remove(PROMPT.options.active_class);
+        }
+    };
 
     return INSTALL_PROMPT;
 })));
