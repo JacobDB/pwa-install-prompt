@@ -8,15 +8,20 @@
         <style type="text/css">
             /* just for the demo */
             body { background: #17AAEC; }
-            p.demo { color: #FFFFFF; font-family: sans-serif; text-align: center; }
-            p.demo a { color: inherit; text-decoration: underline; }
+            .demo { margin: 0 auto; max-width: 500px; text-align: center; }
+            .demo p { color: #FFFFFF; font-family: sans-serif; line-height: 1.25em; }
+            .demo p a { color: inherit; text-decoration: underline; }
+            .demo button { background: #FFFFFF; border: 0; border-radius: 2px; color: #17AAEC; cursor: pointer; font-size: 14px; font-weight: 700; padding: 9.5px 26px; text-transform: uppercase; }
         </style>
 
         <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
-        <p class="demo">For this demo, the prompt appears regardless of last visit or operating system.</p>
-        <p class="demo">Demo icon pulled from <a href="https://fontawesome.com/icons/rocket?style=solid" target="_blank">FontAwesome 5</a>.</p>
+        <div class="demo">
+            <p>The prompt will appear if you haven't visited this page before, or if it's been 14 days since you last visited, and you're on an iOS device. Click the button below to force the prompt to appear.</p>
+            <button onclick="document.querySelector('.pwa-install-prompt__container').classList.add('is-active');">Show Prompt</button>
+            <p>Demo icon pulled from <a href="https://fontawesome.com/icons/rocket?style=solid" target="_blank">FontAwesome 5</a>.</p>
+        </div>
         <div class="pwa-install-prompt__container">
             <button class="pwa-install-prompt__overlay">Close</button>
             <div class="pwa-install-prompt">
@@ -30,11 +35,7 @@
         </div>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
-            setTimeout(function () { // delay initialization for the demo
-                new pwaInstallPrompt(".pwa-install-prompt__container", {
-                    condition: true, // always return true for the demo
-                });
-            }, 1000);
+            new pwaInstallPrompt();
         </script>
     </body>
 </html>
