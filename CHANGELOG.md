@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.14
+
+- Fix example markup in the README; 1256d43822f37a24f399f8c93ebe54de47977cbf
+- Add line break to example script in README; 9f5e1e119d6fc8c1f7471a2317083b43bd707fcd
+- Organize options a bit better; 73c80a085426c897766f632f6f8520277c767bc4
+- Adjust the demo so it's more like a production environment; 69880fa8dd064d24bfc915a7694194b4369d3545
+- Add links to GitHub and NPM to the demo; b515b399d29d7fbfa06ad535fe2641b26623239c
+- Curly apostrophes; eab35155b3eeed46b03ed5f349105c94c4f3201c
+- Add 'open' and 'close' methods; adc3bd7acea0aa0a21131eebab2971d62072c1f4
+- Add "ghost" icons next to the main app icon; 9052ef0c117679c2a9144d5030f3e2b44b48349d
+
 ## v0.1.13
 
 - Change to a single closing element; 5bd29529347e39e291dfac4a24a9db11854ad1e4
