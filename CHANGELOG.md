@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.1
+
+- Remove testing events from demo; 839fd85b190ed334b01eae702107bbf4000c86b8
+- Correct package name in events documentation; be775e2a5cfe430b34d91891c2eab4b38f255174
+
 ## v1.0.0
 
 - Add custom events; Close #2; 7ed02e9322b19e34127479e83efa2fee21abd695
