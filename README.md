@@ -81,7 +81,7 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
 
 Events can be assigned in two ways:
 
-1. Using on parameter on swiper initialization:
+1. Using on parameter on PWA Install Prompt initialization:
 
         var prompt = new pwaInstallPrompt(".pwa-install-prompt__container", {
             // ...
