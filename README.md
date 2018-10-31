@@ -54,7 +54,9 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
 <div class="pwa-install-prompt__container">
     <button class="pwa-install-prompt__overlay">Close</button>
     <div class="pwa-install-prompt">
-        <img class="pwa-install-prompt__icon" src="/path/to/icon/file.png" alt="{app_name}" />
+        <div class="pwa-install-prompt__icon__container">
+            <img class="pwa-install-prompt__icon" src="/path/to/icon/file.png" alt="{app_name}" />
+        </div>
         <div class="pwa-install-prompt__content">
             <h3 class="pwa-install-prompt__title">Install {app_name}</h3>
             <p class="pwa-install-prompt__text">Install this application on your home screen for quick and easy access when you’re on the go.</p>
