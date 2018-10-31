@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.0
+
+- Add custom events; Close #2; 7ed02e9322b19e34127479e83efa2fee21abd695
+- Add icon container to default markup; c71e41c8a6b53e092825230b92b79c7a0b8dd3ca
+
 ## v0.1.14
 
 - Fix example markup in the README; 1256d43822f37a24f399f8c93ebe54de47977cbf
