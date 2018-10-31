@@ -33,10 +33,18 @@ import pwaInstallPrompt from "pwa-install-prompt";
 
 new pwaInstallPrompt(".pwa-install-prompt__container", {
     active_class: "is-active",
-    closer:       ".pwa-install-prompt__overlay",
-    condition:    null,
-    expires:      28,
-    show_after:   14,
+    closer: ".pwa-install-prompt__overlay",
+    condition: null,
+    expires: 28,
+    show_after: 14,
+    on: {
+        open: function () {
+            console.log("open!");
+        },
+        close: function () {
+            console.log("close!");
+        },
+    }
 });
 ```
 
@@ -58,13 +66,44 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
 
 ## Options
 
-| Name           | Default                                 | Description                                                 |
-|----------------|-----------------------------------------|-------------------------------------------------------------|
-| `active_class` | `is-active`                             | Class name to be added when the prompt is visible           |
-| `closer`       | `.pwa-install-prompt__overlay`          | Query selector to target to handle closing the prompt       |
-| `condition`    | `null`                                  | Set a custom condition to determine when to show the prompt |
-| `expires`      | `28`                                    | Number of days before the `last_visit` cookie expires       |
-| `show_after`   | `14`                                    | Number of days to wait before showing the prompt again      |
+| Option         | Type       | Default                                 | Description                                                 |
+|----------------|------------|-----------------------------------------|-------------------------------------------------------------|
+| `active_class` | `string`   | `is-active`                             | Class name to be added when the prompt is visible           |
+| `closer`       | `string`   | `.pwa-install-prompt__overlay`          | Query selector to target to handle closing the prompt       |
+| `condition`    | `function` | `null`                                  | Set a custom condition to determine when to show the prompt |
+| `expires`      | `number`   | `28`                                    | Number of days before the `last_visit` cookie expires       |
+| `show_after`   | `number`   | `14`                                    | Number of days to wait before showing the prompt again      |
+| `on`           | `object`   | `null`                                  | Register event handlers                                     |
+
+## Events
+
+Events can be assigned in two ways:
+
+1. Using on parameter on swiper initialization:
+
+        var prompt = new pwaInstallPrompt(".pwa-install-prompt__container", {
+            // ...
+            on: {
+                open: function () {
+                    console.log("prompt opened!");
+                },
+            },
+        });
+
+2. Using on method after PWA Install Prompt initialization.
+
+        var prompt = new pwaInstallPrompt(".pwa-install-prompt__container", {
+            // ...
+        });
+
+        prompt.on("open", function () {
+            console.log("prompt opened!");
+        });
+
+| Name    | Description                                      |
+|---------|--------------------------------------------------|
+| `open`  | Event will be fired right after prompt is opened |
+| `close` | Event will be fired right after prompt is closed |
 
 ## Contributors
 

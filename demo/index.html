@@ -39,6 +39,14 @@
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
             var prompt = new pwaInstallPrompt();
+
+            prompt.on("open", function () {
+                console.log("open!");
+            });
+
+            prompt.on("close", function () {
+                console.log("close!");
+            });
         </script>
     </body>
 </html>
