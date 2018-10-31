@@ -86,9 +86,15 @@
     width: 16px;
 }
 
+.pwa-install-prompt__icon__container {
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23F0F0F0' d='M65,17C65,10.377 59.623,5 53,5L17,5C10.377,5 5,10.377 5,17L5,53C5,59.623 10.377,65 17,65L53,65C59.623,65 65,59.623 65,53L65,17Z' /%3E%3C/svg%3E%0A") center center / 70px 70px repeat-x;
+    margin: 40px 0 0;
+}
+
 .pwa-install-prompt__icon {
     border-radius: 12px;
-    margin: 40px 0 0;
+    display: block;
+    margin: 0 auto;
     width: 60px;
 }
 
