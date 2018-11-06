@@ -1,5 +1,5 @@
 /**
- * PWA Install Prompt 1.0.1
+ * PWA Install Prompt 1.0.2
  * Prompt users to add your PWA to their home screen, since Apple won’t.
  * https://github.com/JacobDB/pwa-install-prompt/
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 31, 2018
+ * Released on: November 6, 2018
  */
 
 (function (global, factory) {

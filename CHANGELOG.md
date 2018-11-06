@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2
+
+- Fix check for iOS so that iPads are included; 11430c36ef7a49e83a001b4104f888ec04fb1be7
+
 ## v1.0.1
 
 - Remove testing events from demo; 839fd85b190ed334b01eae702107bbf4000c86b8
