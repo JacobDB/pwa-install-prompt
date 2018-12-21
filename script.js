@@ -129,22 +129,26 @@
         const PROMPT    = this;
         const CONTAINER = document.querySelector(PROMPT.options.container);
 
+        PROMPT.emit("beforeOpen");
+
         if (CONTAINER) {
             CONTAINER.classList.add(PROMPT.options.active_class);
         }
 
-        PROMPT.emit("open");
+        PROMPT.emit("afterOpen");
     };
 
     INSTALL_PROMPT.prototype.close = function () {
         const PROMPT    = this;
         const CONTAINER = document.querySelector(PROMPT.options.container);
 
+        PROMPT.emit("beforeClose");
+
         if (CONTAINER) {
             CONTAINER.classList.remove(PROMPT.options.active_class);
         }
 
-        PROMPT.emit("close");
+        PROMPT.emit("afterClose");
     };
 
     return INSTALL_PROMPT;

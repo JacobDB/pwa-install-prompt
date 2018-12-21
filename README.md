@@ -38,11 +38,17 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
     expires: 180,
     show_after: 90,
     on: {
-        open: function () {
-            console.log("open!");
+        beforeOpen: function () {
+            console.log("after open!");
         },
-        close: function () {
-            console.log("close!");
+        afterOpen: function () {
+            console.log("before open!");
+        },
+        beforeClose: function () {
+            console.log("before close!");
+        },
+        afterClose: function () {
+            console.log("after close!");
         },
     }
 });
@@ -102,10 +108,12 @@ Events can be assigned in two ways:
             console.log("prompt opened!");
         });
 
-| Name    | Description                                      |
-|---------|--------------------------------------------------|
-| `open`  | Event will be fired right after prompt is opened |
-| `close` | Event will be fired right after prompt is closed |
+| Name          | Description                                       |
+|---------------|---------------------------------------------------|
+| `beforeOpen`  | Event will be fired right before prompt is opened |
+| `afterOpen`   | Event will be fired right after prompt is opened  |
+| `beforeClose` | Event will be fired right before prompt is closed |
+| `afterClose`  | Event will be fired right after prompt is closed  |
 
 ## Contributors
 
