@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.0
+
+- Change cookie name to `pwa_install_prompt_last_visit` to prevent conflicts; Close #8; fe32f7c494fc7e16ea7370844d29b7c04a136428
+- Extend default `show_after` to 90 days, matching Chrome's native install prompt; Close #11; db5ff6d541d156ef37cc0582927efa446574aa25
+- Add beforeOpen and beforeClose events; Close #10; 23f10cac06ed4ea09c3c9f9c63687005304ad980
+- Fix usage example; 1597e80e2b1177c4ccd69c10990bbb5a6d6d625f
+
 ## v1.0.2
 
 - Fix check for iOS so that iPads are included; 11430c36ef7a49e83a001b4104f888ec04fb1be7
