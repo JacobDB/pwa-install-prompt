@@ -37,10 +37,10 @@
 
         // get the current date and the date the user last visited
         const NOW  = Date.now();
-        const THEN = document.cookie.match(/last_visit=([0-9]+)/);
+        const THEN = document.cookie.match(/pwa_install_prompt_last_visit=([0-9]+)/);
 
-        // update the last_visit cookie with Date.now()
-        document.cookie = "last_visit=" + NOW + "; max-age=" + (60 * 60 * 24 * options.expires);
+        // update the pwa_install_prompt_last_visit cookie with Date.now()
+        document.cookie = "pwa_install_prompt_last_visit=" + NOW + "; max-age=" + (60 * 60 * 24 * options.expires);
 
         // get the number of days since the user last visited and check if they're using iOS
         const DAYS = THEN && THEN.length >= 2 ? Math.ceil((parseInt(THEN[1]) - NOW) / (1000 * 60 * 60 * 24)) : NaN;
