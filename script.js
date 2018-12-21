@@ -20,8 +20,8 @@
         closer:       ".pwa-install-prompt__overlay",
         condition:    null,
         container:    ".pwa-install-prompt__container",
-        expires:      28,
-        show_after:   14,
+        expires:      180,
+        show_after:   90,
     };
 
     const NEEDS_TO_SEE_PROMPT = function (options) {
