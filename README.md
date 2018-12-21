@@ -39,10 +39,10 @@ new pwaInstallPrompt(".pwa-install-prompt__container", {
     show_after: 90,
     on: {
         beforeOpen: function () {
-            console.log("after open!");
+            console.log("before open!");
         },
         afterOpen: function () {
-            console.log("before open!");
+            console.log("after open!");
         },
         beforeClose: function () {
             console.log("before close!");
