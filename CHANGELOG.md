@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.1
+
+- Correct day count; aece95b8ac369583349501ade8038edd2ba81302
+- Correct day counter information; 3005a0f9d9763b3fd28aaa40421016f27a67ef4c
+- Fix cookie SameSite policy; 2164459a89ba668d5c93c0c15961c3025c3dbf2f
+
 ## v1.1.0
 
 - Change cookie name to `pwa_install_prompt_last_visit` to prevent conflicts; Close #8; fe32f7c494fc7e16ea7370844d29b7c04a136428
